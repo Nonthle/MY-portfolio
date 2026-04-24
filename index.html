@@ -929,6 +929,26 @@
     section { padding: 60px 0; }
     .hero-text h1 { font-size: 2rem; }
   }
+
+  .btn-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ff004f;
+  color: #ff004f;
+}
+
+.btn-outline:hover {
+  background: #ff004f;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
 </style>
 </head>
 <body>
@@ -1031,9 +1051,20 @@
         <p>
           I enjoy building modern web applications, working with data, and solving complex technical problems to create efficient and secure digital solutions.
         </p>
-        <a href="images/Samkelisiwe Dlamini.CV.pdf" download class="btn btn-primary" style="margin-top:10px;">
+        <!---<a href="images/Samkelisiwe Dlamini.CV.pdf" download class="btn btn-primary" style="margin-top:10px;">
           <i class="fa-solid fa-download"></i> Download CV
-        </a>
+        </a>-->
+        
+        <div class="btn-row">
+  <a href="images/Samkelisiwe Dlamini.CV.pdf" download class="btn">
+    <i class="fa-solid fa-file-arrow-down"></i> Download CV
+  </a>
+  <a href="https://github.com/samkelisiwedlamini" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+    <i class="fa-brands fa-github"></i> See My Work
+  </a>
+</div>
+
+        
       </div>
     </div>
   </div>
